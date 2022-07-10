@@ -1,0 +1,119 @@
+.search {
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgb(5 16 44 / 15%);
+}
+
+.search input[type="text"] {
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+
+.search input[type="text"]:hover,
+.search input[type="text"]:focus {
+    border: 2px solid #250bb9;
+    outline: none;
+}
+
+.search input[type="submit"] {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 3.5px;
+    color: #fff;
+    background-color: rgb(15, 47, 226);
+    text-align: center;
+    border: 2px;
+    outline: none;
+}
+
+.search input[type="submit"]:hover,
+.search input[type="submit"]:focus {
+    border: 1px solid #250bb9;
+    outline: none;
+}
+
+.search h2 {
+    padding: 12px;
+    color: #fff;
+}
+
+.result {
+    position: absolute;
+    height: 82%;
+    width: 100%;
+    background: var(--bgColorLinear);
+}
+
+.result-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-title img {
+    background-color: transparent;
+    margin-top: 5px;
+    width: 55px;
+    height: 55px;
+}
+
+.result-title h1 {
+    padding: 10px;
+    color: rgb(12, 100, 233);
+}
+
+.result-props {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1%;
+}
+
+.props {
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(169, 0, 236);
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.8s ease;
+}
+
+.props:hover {
+    border: 2px solid #000;
+}
+
+@media (max-width: 550px) {
+    .result-props {
+        grid-template-columns: 49% 49%;
+    }
+
+    .props {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 495px) {
+    .search input[type="submit"] {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .search input[type="submit"] {
+        width: 90%;
+    }
+
+    .search input[type="text"] {
+        width: 90%;
+    }
+}
